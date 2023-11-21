@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .container { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 320px 9px 198px 9px 153px 9px 50px;
+      grid-template-rows: 414px 9px 130px 9px 155px 9px 20px;
+    }
+
+    .gap1 {
+      background-color: #000;
+      height: 748px;
+      width: 9px;
+      grid-area: 1 / 2 / -1 / 3;
+    }
+
+    .gap2 {
+      background-color: #000;
+      height: 9px;
+      width: 748px;
+      grid-area: 2 / 1 / 3 / -1;
+    }
+
+    .gap3 {
+      background-color: #000;
+      height: 9px;
+      width: 689px;
+      grid-area: -3 / 1 / -2 / -3;
+    }
+
+    .gap4 {
+      background-color: #000;
+      height: 20px;
+      width: 9px;
+      grid-area: -2 / 4 / -1 / 5;
+    }
+
+    .gap5 {
+      background-color: #000;
+      height: 323px;
+      width: 9px;
+      grid-area: 3 / -3 / -1 / -2;
+    }
+
+    .gap6 {
+      background-color: #000;
+      height: 9px;
+      width: 50px;
+      grid-area: -4 / -2 / -3 / -1;
+    }
+
+    .white {
+      background-color: #F0F1EC;
+      height: 748px;
+      width: 748px;
+      grid-area: 1 / 1 / -1 / -1;
+      order: -1;
+    }
+
+    .red {
+      background-color: #E72F24;
+      height: 414px;
+      width: 320px;
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .black {
+      background-color: #232629;
+      height: 20px;
+      width: 153px;
+      grid-area: -2 / 5 / -1 / 6;
+    }
+
+    .blue {
+      background-color: #004592;
+      height: 130px;
+      width: 50px;
+      border-bottom: 10px solid black;
+      grid-area: 3 / -2 / 4 / -1;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+      height: 20px;
+      width: 198px;
+      grid-area: -2 / 3 / -1 / 4;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="grid-container">
+      <div class="gap1"></div>
+      <div class="gap2"></div>
+      <div class="gap3"></div>
+      <div class="gap4"></div>
+      <div class="gap5"></div>
+      <div class="gap6"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="black"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+    </div>
+  <div>
+</body>
+
+</html>
